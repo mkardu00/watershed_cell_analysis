@@ -70,8 +70,8 @@ markers = markers + 1
 # Now, mark the region of unknown with zero
 markers[unknown == 255] = 0
 
-markers = cv2.watershed(img, markers)
-img[markers == -1] = [255, 0, 0]
+watershed_image = cv2.watershed(img, markers)
+img[watershed_image == -1] = [255, 0, 0]
 cv2.imshow("watershed", img)
 
 cv2.waitKey(0)
