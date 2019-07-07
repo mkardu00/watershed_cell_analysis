@@ -1,7 +1,8 @@
 import cv2
 import numpy
 
-img = cv2.imread("C:/Users/Marija/Desktop/Zavrsni_rad/Tv111.png")
+img = cv2.imread("C:/Users/Marija/OneDrive/Zavrsni_rad/Tv114.png")
+cv2.imshow("original", img)
 
 # Change color space from blue, green, red to gray. Grayscale image is needed for later
 # thresholding.
